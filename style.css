@@ -1,0 +1,302 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    font-family: 'Century';
+    background: url("Background.jpg") center/cover no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.6;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+    height: 60px;
+    gap:50px;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    padding: 8px 0;
+}
+
+ul li a{
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 23px;
+    color:rgb(119, 157, 226);
+    padding: 15px 13px;
+    transition: 0.3s ease;
+    font-weight: 800;
+    display: block;
+    height: 100%;
+}
+
+ul li a:hover{
+    background-color:aliceblue;
+    color:#000;
+    border-radius: 2px;
+}
+
+ul li.active a{
+    background-color:aliceblue;
+    color:#000;
+    border-radius: 2px;
+    height: 100%;
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title h1{
+    color:antiquewhite;
+    font-size: 110px;
+    font-family:'Century';
+    margin-bottom: 20px;
+    background: rgba(255,255,255,0);
+    backdrop-filter: blur(12px);           /* glass blur */
+    -webkit-backdrop-filter: blur(12px);   /* Safari support */
+
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;      /* vertical centering */
+    align-items: center;          /* horizontal centering */
+    height: calc(100vh - 80px);   /* fills remaining space under menu (adjust 80px if menu height is different) */
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.08);
+}
+
+body {
+    margin: 0;
+    font-family: 'Century';
+    background: url("pexels-incrediblerafa-4737484.jpg") center/cover no-repeat;
+    position: relative;
+    padding-top: 90px;
+}
+
+body::before {
+    content: "";
+    position: fixed;      /* stays full-screen */
+    inset: 0;
+    background: rgba(0,0,0,0.35); /* dark overlay */
+    pointer-events: none; /* allows clicks to pass through */
+    z-index: 10;
+}
+
+.menu, .home-content {
+    position: relative;
+    z-index: 20;
+}
+
+.logo{
+    color:rgb(175, 165, 233);
+    font-size: 40px;
+    font-family:'Courier New', Courier, monospace;
+    cursor: pointer;
+    left: 50px;
+    white-space: nowrap;
+    margin-right: 110px;
+    margin-left: 70px;
+}
+
+.offerings {
+    max-width: 900px;
+    margin: 50px auto;
+    color:rgb(189, 179, 247);
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.08);
+    background: rgba(255,255,255,0);
+    backdrop-filter: blur(12px);           /* glass blur */
+    -webkit-backdrop-filter: blur(12px);   /* Safari support */
+
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+p strong {
+    font-weight: 900;  /* max weight in most fonts */
+    color: rgb(191, 187, 218);  /* optional, matches your logo */
+}
+
+.title{
+    color:aliceblue;
+    font-size: 36px;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.08);
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0,0,0,0.45); 
+    backdrop-filter: blur(12px);           /* glass blur */
+    -webkit-backdrop-filter: blur(12px);   /* Safari support */
+
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    padding: 40px;
+    margin: 50px auto;
+
+    width: 85%;
+    max-width: 1000px;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.08);
+}
+
+.hook{
+    text-align: center;
+    max-width: 800px;
+    margin: 60px auto 40px;
+}
+
+.title{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hook-text{
+    font-size: 18px;
+    color: aliceblue;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.08);
+}
+
+.main-content{
+    width: 80%;
+    max-width: 800px;
+    text-align: left;
+    margin-bottom: 80px;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.08);
+    padding-top: 90px;
+}
+
+.subheader{
+    font-size: 26px;
+    margin: 80px 0 10px;
+    color: aliceblue;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.08);
+}
+
+p{
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color:rgb(175, 131, 211);
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.08);
+}
+
+.bullets, .sub-bullets{
+    list-style: none;
+    padding: 0;
+}
+
+.bullets{
+    margin: 30px 0 40px 0;
+    font-size: 19px;
+    color:cyan;
+    padding-left: 25px;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.08);
+}
+
+.sub-bullets{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    font-size: 18px;
+    color:rgb(142, 215, 218);
+    list-style-type: disc;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.08);
+}
+
+.bullets > li{
+    margin-bottom: 10px;
+}
+
+.sub-bullets > li{
+    margin-bottom: 6px;
+}
+
+.container{
+    position: relative;
+    z-index: 1;
+    padding-top: 1px;
+}
+
+p{
+    margin: 20px 0
+}
+
+.nav-container{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    height: 90px;
+    padding: 0 80px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background: rgba(0,0,0,0.5);
+    background-color: rgba(8, 53, 73, 0.6);
+}
+
+.my-image{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.button{
+    padding: 15px 35px;
+    font-size: 20px;
+    border-radius:6px;
+    cursor: pointer;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+button:hover{
+    background:cyan;
+}
+
+.image-tracker{
+    align-items: center;
+    padding-top: 20px;
+}
