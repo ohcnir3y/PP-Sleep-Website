@@ -103,7 +103,7 @@ body {
     font-family: 'Century';
     background: url("pexels-incrediblerafa-4737484.jpg") center/cover no-repeat;
     position: relative;
-    padding-top: 90px;
+    padding-top: 90px
 }
 
 body::before {
@@ -265,17 +265,48 @@ p{
 }
 
 .nav-container{
-    display: grid;
-    grid-template-columns: auto 1fr auto;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+
     height: 90px;
-    padding: 0 80px;
+    padding: 0 5vw;
+    width: 100%;
     position: fixed;
+
     top: 0;
+    left: 0;
     z-index: 999;
     background: rgba(0,0,0,0.5);
     background-color: rgba(8, 53, 73, 0.6);
+    overflow-x: auto;
+    white-space: no-wrap;
 }
+
+.nav-container::-webkit-scrollbar {
+    display: none;        /* hide scrollbar on Chrome/Safari */
+}
+
+/* Inner scroll container: flex to layout logo + menu horizontally */
+.nav-scroll {
+    display: flex;
+    align-items: center;
+    min-width: max-content;   /* ensures it grows with content */
+}
+
+
+.logo {
+    font-size: clamp(24px, 4vw, 40px);
+}
+
+.menu {
+    display: flex;
+    gap: clamp(10px, 2vw, 50px);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 
 .my-image{
     width: 100%;
