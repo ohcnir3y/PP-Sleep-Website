@@ -37,7 +37,7 @@ ul li{
 }
 
 ul li a{
-    white-space: nowrap;
+    white-space: normal;
     text-decoration: none;
     font-size: 23px;
     color:rgb(119, 157, 226);
@@ -270,7 +270,7 @@ p{
     align-items: center;
 
     height: 90px;
-    padding: 0 5vw;
+    padding: 0 2vw;
     width: 100%;
     position: fixed;
 
@@ -279,7 +279,7 @@ p{
     z-index: 999;
     background: rgba(0,0,0,0.5);
     background-color: rgba(8, 53, 73, 0.6);
-    overflow-x: auto;
+    overflow-x: hidden;
     white-space: no-wrap;
 }
 
@@ -291,7 +291,7 @@ p{
 .nav-scroll {
     display: flex;
     align-items: center;
-    min-width: max-content;   /* ensures it grows with content */
+    width: 100%;   /* ensures it grows with content */
 }
 
 
