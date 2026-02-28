@@ -127,8 +127,8 @@ body::before {
     cursor: pointer;
     left: 50px;
     white-space: nowrap;
-    margin-right: 110px;
-    margin-left: 70px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .offerings {
