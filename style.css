@@ -39,7 +39,7 @@ ul li{
 ul li a{
     white-space: normal;
     text-decoration: none;
-    font-size: 23px;
+    font-size: 3px;
     color:rgb(119, 157, 226);
     padding: 15px 13px;
     transition: 0.3s ease;
@@ -73,7 +73,7 @@ ul li.active a{
     font-size: 110px;
     font-family:'Century';
     margin-bottom: 20px;
-    background: rgba(255,255,255,0);
+    background: rgba(255,255,255,0.05);
     backdrop-filter: blur(12px);           /* glass blur */
     -webkit-backdrop-filter: blur(12px);   /* Safari support */
 
@@ -125,17 +125,18 @@ body::before {
     margin-top: auto;
     margin-right: 40px;
     margin-left: 20px;
+    margin-bottom: auto;
 }
 
 .offerings {
     max-width: 900px;
     margin: 50px auto;
     color:rgb(189, 179, 247);
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.6;
     text-align: center;
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.08);
-    background: rgba(255,255,255,0);
+    background: rgba(255,255,255,0.02);
     backdrop-filter: blur(12px);           /* glass blur */
     -webkit-backdrop-filter: blur(12px);   /* Safari support */
 
@@ -150,7 +151,7 @@ p strong {
 
 .title{
     color:aliceblue;
-    font-size: 36px;
+    font-size: 40px;
     width: auto;
     margin: 0 auto;
     margin-top: 50px;
@@ -185,12 +186,12 @@ p strong {
 }
 
 .title{
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
 .hook-text{
-    font-size: 18px;
+    font-size: 25px;
     color: aliceblue;
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.08);
 }
@@ -212,10 +213,10 @@ p strong {
 }
 
 p{
-    font-size: 20px;
+    font-size: 23px;
     line-height: 1.7;
     margin-bottom: 20px;
-    color:rgb(181, 121, 230);
+    color:rgb(180, 113, 235);
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.08);
 }
 
@@ -226,7 +227,7 @@ p{
 
 .bullets{
     margin: 30px 0 40px 0;
-    font-size: 19px;
+    font-size: 22px;
     color:cyan;
     padding-left: 25px;
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.08);
@@ -236,7 +237,7 @@ p{
     margin-top: 10px;
     margin-bottom: 10px;
     padding-left: 30px;
-    font-size: 18px;
+    font-size: 22px;
     color:rgb(142, 215, 218);
     list-style-type: disc;
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.08);
@@ -257,7 +258,7 @@ p{
 }
 
 p{
-    margin: 20px 0
+    margin: 20px 0;
 }
 
 .nav-container{
@@ -290,9 +291,6 @@ p{
 }
 
 
-.logo {
-    font-size: clamp(24px, 4vw, 40px);
-}
 
 .menu {
     display: flex;
@@ -390,7 +388,7 @@ button:hover{
     border-radius: 4px;
     padding: 0;
     z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
 /* Show submenu on hover */
