@@ -73,12 +73,14 @@ ul li.active a{
     font-size: 110px;
     font-family:'Century';
     margin-bottom: 20px;
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(12px);           /* glass blur */
+    background: rgba(60, 0, 255, 0.05);
+    backdrop-filter: blur(8px);           /* glass blur */
     -webkit-backdrop-filter: blur(12px);   /* Safari support */
 
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(0, 208, 255, 0.69);
+    animation: pulse 10s infinite; /* animation name, duration, infinite loop */
+    transform-origin: center; 
 }
 
 .home-content {
@@ -430,23 +432,5 @@ button:hover{
     }
     100% {
         transform: scale(1);
-    }
-}
-
-.menu li.active a {
-    animation: glowHome 1.5s infinite alternate;
-    border-radius: 4px; /* keeps button edges smooth */
-}
-
-/* Glow animation keyframes */
-@keyframes glowHome {
-    0% {
-        box-shadow: 0 0 5px rgba(119, 157, 226, 0.5);
-    }
-    50% {
-        box-shadow: 0 0 15px rgba(119, 157, 226, 0.8);
-    }
-    100% {
-        box-shadow: 0 0 5px rgba(119, 157, 226, 0.5);
     }
 }
