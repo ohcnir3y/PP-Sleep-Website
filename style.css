@@ -423,14 +423,14 @@ button:hover{
 }
 
 /* Define the pulse keyframes */
-@keyframes pulse {
+@keyframes pulse{
     0% {
         transform: scale(1);
     }
     50% {
         transform: scale(1.05); /* grows
     }
-    100% {
+        100% {
         transform: scale(1);
     }
 }
