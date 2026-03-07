@@ -121,14 +121,10 @@ body::before {
 }
 
 .logo{
-    color:rgb(175, 165, 233);
-    font-size: 40px;
-    font-family:'Courier New', Courier, monospace;
-    cursor: pointer;
-    left: 50px;
-    white-space: nowrap;
-    margin-right: 50px;
-    margin-left: 50px;
+    float: left;
+    margin-top: auto;
+    margin-right: 40px;
+    margin-left: 20px;
 }
 
 .offerings {
@@ -205,7 +201,7 @@ p strong {
     text-align: left;
     margin-bottom: 80px;
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.08);
-    padding-top: 90px;
+    padding-top:0px;
 }
 
 .subheader{
@@ -279,7 +275,6 @@ p{
     z-index: 999;
     background: rgba(0,0,0,0.5);
     background-color: rgba(8, 53, 73, 0.6);
-    overflow-x: hidden;
     white-space: no-wrap;
 }
 
@@ -330,4 +325,92 @@ button:hover{
 .image-tracker{
     align-items: center;
     padding-top: 20px;
+}
+/* Nav container */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    padding: 0 2vw;
+    background-color: rgba(8, 53, 73, 0.6);
+    z-index: 999;
+}
+
+/* Menu flex layout */
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: clamp(10px, 2vw, 50px);
+}
+
+/* Parent li relative for submenu positioning */
+.menu > li {
+    position: relative;
+}
+
+/* Links */
+.menu li a {
+    display: block;
+    padding: 15px 13px;
+    font-size: 23px;
+    font-weight: 800;
+    color: rgb(119, 157, 226);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: aliceblue;
+    color: #000;
+    border-radius: 1px;
+}
+
+/* Active link */
+.menu li.active a {
+    background-color: aliceblue;
+    color: #000;
+    border-radius: 1px;
+}
+
+/* Submenu */
+.submenu {
+    display: none;              /* hidden by default */
+    position: absolute;         /* absolute under parent */
+    top: 100%;                  /* directly below main button */
+    left: 0;
+    background-color: aliceblue;/* solid light background */
+    min-width: 180px;
+    border-radius: 4px;
+    padding: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Show submenu on hover */
+.menu > li:hover > .submenu {
+    display: block;
+}
+
+/* Submenu items */
+.submenu li a {
+    display: block;
+    padding: 10px 15px;
+    color: black !important;      /* ensure text is visible */
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    background-color: aliceblue;  /* solid background for visibility */
+    font-weight: 600;
+}
+
+/* Hover effect for submenu items */
+.submenu li a:hover {
+    background-color: #d3eafc;
+    color: #000;
 }
