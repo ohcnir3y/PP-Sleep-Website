@@ -414,3 +414,21 @@ button:hover{
     background-color: #d3eafc;
     color: #000;
 }
+
+.logo img {
+    animation: pulse 4s infinite; /* animation name, duration, infinite loop */
+    transform-origin: center;     /* ensures scaling happens from center */
+}
+
+/* Define the pulse keyframes */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05); /* grows
+    }
+    100% {
+        transform: scale(1);
+    }
+}
