@@ -69,18 +69,43 @@ ul li.active a{
 }
 
 .title h1{
-    color:antiquewhite;
+    color:rgb(223, 236, 239);
     font-size: 110px;
     font-family:'Century';
     margin-bottom: 20px;
-    background: rgba(60, 0, 255, 0.05);
+    background: rgba(60, 0, 255, 0.048);
+    backdrop-filter: blur(8px);           /* glass blur */
+    -webkit-backdrop-filter: blur(12px);   /* Safari support */
+
+    border-radius: 20px;
+    border: 1px solid rgba(0, 255, 234, 0.69);
+    animation: pulseGlow 10s infinite; /* animation name, duration, infinite loop */
+    transform-origin: center; 
+}
+
+.title h1:hover{
+    background-color:rgba(15, 140, 250, 0.03);
     backdrop-filter: blur(8px);           /* glass blur */
     -webkit-backdrop-filter: blur(12px);   /* Safari support */
 
     border-radius: 20px;
     border: 1px solid rgba(0, 208, 255, 0.69);
-    animation: pulse 10s infinite; /* animation name, duration, infinite loop */
-    transform-origin: center; 
+}
+
+/* Pulse + glow animation */
+@keyframes pulseGlow {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0px rgba(173, 216, 230, 0.6);
+    }
+    50% {
+        transform: scale(1.05); /* grows 10% */
+        box-shadow: 0 0 20px rgba(173, 216, 230, 0.8); /* glow effect */
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0px rgba(173, 216, 230, 0.6);
+    }
 }
 
 .home-content {
@@ -112,7 +137,7 @@ body::before {
     content: "";
     position: fixed;      /* stays full-screen */
     inset: 0;
-    background: rgba(0,0,0,0.35); /* dark overlay */
+    background: rgba(0,0,0,0.15); /* dark overlay */
     pointer-events: none; /* allows clicks to pass through */
     z-index: 10;
 }
@@ -144,15 +169,21 @@ body::before {
 
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 12px rgba(67, 84, 116, 0.9),
+                0 0 25px rgba(61, 104, 186, 0.7);
+}
+
+.offerings:hover{
+    background-color:rgba(187, 123, 243, 0.079);
 }
 
 p strong {
     font-weight: 900;  /* max weight in most fonts */
-    color: rgb(191, 187, 218);  /* optional, matches your logo */
+    color: rgb(129, 253, 255);  /* optional, matches your logo */
 }
 
 .title{
-    color:aliceblue;
+    color:rgb(255, 255, 255);
     font-size: 40px;
     width: auto;
     margin: 0 auto;
@@ -218,7 +249,7 @@ p{
     font-size: 23px;
     line-height: 1.7;
     margin-bottom: 20px;
-    color:rgb(180, 113, 235);
+    color:rgb(189, 179, 247);
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.08);
 }
 
@@ -379,6 +410,8 @@ button:hover{
     background-color: aliceblue;
     color: #000;
     border-radius: 1px;
+    box-shadow: 0 0 12px rgba(19, 187, 234, 0.9),
+                0 0 25px rgba(110, 28, 251, 0.7);
 }
 
 /* Submenu */
@@ -415,11 +448,6 @@ button:hover{
 .submenu li a:hover {
     background-color: #d3eafc;
     color: #000;
-}
-
-.logo img {
-    animation: pulse 4s infinite; /* animation name, duration, infinite loop */
-    transform-origin: center;     /* ensures scaling happens from center */
 }
 
 /* Define the pulse keyframes */
